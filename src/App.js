@@ -90,6 +90,37 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      switch (e.key) {
+        case 'ArrowUp':
+          setTargetPosition(cameraPositions.Blog.clone());
+          break;
+        case 'ArrowDown':
+          setTargetPosition(cameraPositions.Contact.clone());
+          break;
+        case 'ArrowLeft':
+          setTargetPosition(cameraPositions.Portfolio.clone());
+          break;
+        case 'ArrowRight':
+          setTargetPosition(cameraPositions.Services.clone());
+          break;
+        case '1':
+          setTargetPosition(cameraPositions.Home.clone());
+          break;
+        case '2':
+          setTargetPosition(cameraPositions.About.clone());
+          break;
+        default:
+          break;
+      }
+    };
+  
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+  
+
   return (
     <>
       <div style={{ position: 'absolute', top: 20, left: 20, zIndex: 1 }}>

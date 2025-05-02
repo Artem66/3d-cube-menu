@@ -10,6 +10,7 @@ This project is a 3D interactive cube menu built using **React Three Fiber** and
 - 🖱️ Full mouse interaction (OrbitControls)
 - 💨 Cancel hover animation when user starts rotating
 - 🧭 Auto-animation resumes only on new hover
+- ⌨️ keyborad control
 - ⚙️ Built with `react-three-fiber` and `@react-three/drei`
 
 ---
