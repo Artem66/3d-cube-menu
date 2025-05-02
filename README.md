@@ -37,7 +37,7 @@ Open your browser to http://localhost:3000.
 
 # DEMO
 
-DEMO[https://3d-cube-menu.vercel.app/]
+Check out the live demo here: [DEMO](https://3d-cube-menu.vercel.app/)
 
 📁 Project Structure
 
